@@ -2331,18 +2331,30 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <library name="Trevor-lab4">
 <packages>
 <package name="CFR-12">
-<pad name="P$1" x="-3" y="0" drill="0.7"/>
-<pad name="P$2" x="3" y="0" drill="0.7"/>
+<pad name="P$1" x="-3" y="0" drill="0.9" diameter="1.8796"/>
+<pad name="P$2" x="3" y="0" drill="0.9" diameter="1.8796"/>
 <wire x1="-2" y1="1" x2="2" y2="1" width="0.127" layer="21"/>
 <wire x1="2" y1="-1" x2="-2" y2="-1" width="0.127" layer="21"/>
 <wire x1="-2" y1="1" x2="-2" y2="-1" width="0.127" layer="21"/>
 <wire x1="2" y1="1" x2="2" y2="-1" width="0.127" layer="21"/>
 <text x="-3" y="1.5" size="1" layer="25">&gt;NAME</text>
 <text x="3" y="-1.5" size="1" layer="27" align="top-right">&gt;VALUE</text>
-<wire x1="-3.5" y1="1" x2="3.5" y2="1" width="0.127" layer="39"/>
-<wire x1="3.5" y1="1" x2="3.5" y2="-1" width="0.127" layer="39"/>
-<wire x1="3.5" y1="-1" x2="-3.5" y2="-1" width="0.127" layer="39"/>
-<wire x1="-3.5" y1="-1" x2="-3.5" y2="1" width="0.127" layer="39"/>
+<wire x1="-4.5" y1="1.5" x2="4.5" y2="1.5" width="0.127" layer="39"/>
+<wire x1="4.5" y1="1.5" x2="4.5" y2="-1.5" width="0.127" layer="39"/>
+<wire x1="4.5" y1="-1.5" x2="-4.5" y2="-1.5" width="0.127" layer="39"/>
+<wire x1="-4.5" y1="-1.5" x2="-4.5" y2="1.5" width="0.127" layer="39"/>
+</package>
+<package name="RC0805">
+<smd name="P$1" x="-0.775" y="0" dx="0.55" dy="1.35" layer="1"/>
+<smd name="P$2" x="0.775" y="0" dx="0.55" dy="1.35" layer="1"/>
+<wire x1="-0.3" y1="0.7" x2="0.3" y2="0.7" width="0.1" layer="21"/>
+<wire x1="-0.3" y1="-0.7" x2="0.3" y2="-0.7" width="0.1" layer="21"/>
+<text x="-1.2" y="0.9" size="0.6" layer="25">&gt;NAME</text>
+<text x="1.2" y="-0.9" size="0.6" layer="27" align="top-right">&gt;VALUE</text>
+<wire x1="-1.1" y1="0.8" x2="1.1" y2="0.8" width="0.127" layer="39"/>
+<wire x1="1.1" y1="0.8" x2="1.1" y2="-0.8" width="0.127" layer="39"/>
+<wire x1="1.1" y1="-0.8" x2="-1.1" y2="-0.8" width="0.127" layer="39"/>
+<wire x1="-1.1" y1="-0.8" x2="-1.1" y2="0.8" width="0.127" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -2379,6 +2391,20 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="*EBK-ND" constant="no"/>
 <attribute name="TOL" value="5%"/>
+</technology>
+</technologies>
+</device>
+<device name="-0805" package="RC0805">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Trevor Smith"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="311-*CRCT" constant="no"/>
+<attribute name="TOL" value="1%"/>
 </technology>
 </technologies>
 </device>
