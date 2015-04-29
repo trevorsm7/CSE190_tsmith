@@ -1562,9 +1562,9 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="R12" library="Trevor-lab4" deviceset="RESISTOR" device="-0805" value="10k"/>
 <part name="R13" library="Trevor-lab4" deviceset="RESISTOR" device="-0805" value="10k"/>
 <part name="GND34" library="Lab5" deviceset="GND" device=""/>
-<part name="R14" library="Trevor-lab4" deviceset="RESISTOR" device="-0805" value="10k"/>
-<part name="R15" library="Lab5" deviceset="R-US_" device="R0805" value="JUMP"/>
-<part name="R16" library="Lab5" deviceset="R-US_" device="R0805" value="JUMP"/>
+<part name="GND35" library="Lab5" deviceset="GND" device=""/>
+<part name="GND36" library="Lab5" deviceset="GND" device=""/>
+<part name="GND37" library="Lab5" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1599,33 +1599,33 @@ of the quadcopter when it is flying</text>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="325.12" y="0"/>
 <instance part="U1" gate="G$1" x="96.52" y="86.36" rot="MR0"/>
-<instance part="Y1" gate="G$1" x="147.32" y="83.82" smashed="yes">
-<attribute name="VALUE" x="144.78" y="78.74" size="1.778" layer="96"/>
-<attribute name="NAME" x="149.86" y="84.836" size="1.778" layer="95"/>
+<instance part="Y1" gate="G$1" x="152.4" y="83.82" smashed="yes">
+<attribute name="VALUE" x="148.59" y="87.63" size="1.778" layer="96"/>
+<attribute name="NAME" x="154.432" y="81.026" size="1.778" layer="95"/>
 </instance>
-<instance part="C1" gate="G$1" x="139.7" y="78.74"/>
-<instance part="C2" gate="G$1" x="154.94" y="78.74"/>
-<instance part="GND1" gate="1" x="139.7" y="68.58"/>
-<instance part="GND2" gate="1" x="154.94" y="68.58"/>
-<instance part="C3" gate="G$1" x="167.64" y="86.36"/>
-<instance part="C4" gate="G$1" x="177.8" y="86.36"/>
-<instance part="GND3" gate="1" x="167.64" y="76.2"/>
-<instance part="GND4" gate="1" x="177.8" y="76.2"/>
+<instance part="C1" gate="G$1" x="144.78" y="78.74"/>
+<instance part="C2" gate="G$1" x="160.02" y="78.74"/>
+<instance part="GND1" gate="1" x="144.78" y="68.58"/>
+<instance part="GND2" gate="1" x="160.02" y="68.58"/>
+<instance part="C3" gate="G$1" x="172.72" y="86.36"/>
+<instance part="C4" gate="G$1" x="182.88" y="86.36"/>
+<instance part="GND3" gate="1" x="172.72" y="76.2"/>
+<instance part="GND4" gate="1" x="182.88" y="76.2"/>
 <instance part="GND5" gate="1" x="129.54" y="40.64"/>
 <instance part="GND6" gate="1" x="129.54" y="99.06"/>
-<instance part="B1" gate="G$1" x="162.56" y="111.76" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="170.18" y="119.38" size="1.778" layer="96" rot="MR0"/>
-<attribute name="NAME" x="167.64" y="91.44" size="1.778" layer="95" rot="MR0"/>
+<instance part="B1" gate="G$1" x="160.02" y="111.76" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="167.64" y="119.38" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="162.56" y="116.84" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="C5" gate="G$1" x="152.4" y="109.22" smashed="yes" rot="R270">
-<attribute name="VALUE" x="143.637" y="109.728" size="1.778" layer="96"/>
-<attribute name="NAME" x="153.035" y="106.68" size="1.778" layer="95"/>
+<instance part="C5" gate="G$1" x="149.86" y="109.22" smashed="yes" rot="R270">
+<attribute name="VALUE" x="141.097" y="109.728" size="1.778" layer="96"/>
+<attribute name="NAME" x="150.495" y="106.68" size="1.778" layer="95"/>
 </instance>
-<instance part="GND7" gate="1" x="165.1" y="99.06"/>
-<instance part="C8" gate="G$1" x="175.26" y="109.22"/>
-<instance part="U$1" gate="G$1" x="175.26" y="124.46"/>
+<instance part="GND7" gate="1" x="162.56" y="99.06"/>
+<instance part="C8" gate="G$1" x="170.18" y="109.22"/>
+<instance part="U$1" gate="G$1" x="170.18" y="124.46"/>
 <instance part="GND8" gate="1" x="142.24" y="106.68"/>
-<instance part="GND9" gate="1" x="175.26" y="99.06"/>
+<instance part="GND9" gate="1" x="170.18" y="99.06"/>
 <instance part="R1" gate="G$1" x="134.62" y="127" rot="R90"/>
 <instance part="C9" gate="G$1" x="25.4" y="119.38"/>
 <instance part="C10" gate="G$1" x="38.1" y="119.38"/>
@@ -1714,9 +1714,9 @@ of the quadcopter when it is flying</text>
 <instance part="R12" gate="G$1" x="355.6" y="215.9"/>
 <instance part="R13" gate="G$1" x="355.6" y="210.82"/>
 <instance part="GND34" gate="1" x="416.56" y="215.9"/>
-<instance part="R14" gate="G$1" x="355.6" y="220.98"/>
-<instance part="R15" gate="G$1" x="149.86" y="116.84"/>
-<instance part="R16" gate="G$1" x="149.86" y="101.6"/>
+<instance part="GND35" gate="1" x="137.16" y="78.74"/>
+<instance part="GND36" gate="1" x="132.08" y="111.76"/>
+<instance part="GND37" gate="1" x="358.14" y="223.52" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -1724,46 +1724,46 @@ of the quadcopter when it is flying</text>
 <net name="N$2" class="0">
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="154.94" y1="81.28" x2="154.94" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="81.28" x2="160.02" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="XTAL1"/>
-<wire x1="154.94" y1="83.82" x2="154.94" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="86.36" x2="124.46" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="83.82" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="86.36" x2="124.46" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="Y1" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="83.82" x2="154.94" y2="83.82" width="0.1524" layer="91"/>
-<junction x="154.94" y="83.82"/>
+<wire x1="154.94" y1="83.82" x2="160.02" y2="83.82" width="0.1524" layer="91"/>
+<junction x="160.02" y="83.82"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="XTAL2"/>
 <pinref part="Y1" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="83.82" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="83.82" x2="144.78" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="83.82" x2="144.78" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="81.28" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
-<junction x="139.7" y="83.82"/>
+<wire x1="144.78" y1="83.82" x2="149.86" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="81.28" x2="144.78" y2="83.82" width="0.1524" layer="91"/>
+<junction x="144.78" y="83.82"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="139.7" y1="73.66" x2="139.7" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="73.66" x2="144.78" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="154.94" y1="73.66" x2="154.94" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="73.66" x2="160.02" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="167.64" y1="81.28" x2="167.64" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="81.28" x2="172.72" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="177.8" y1="81.28" x2="177.8" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="81.28" x2="182.88" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="AVSS"/>
@@ -1795,12 +1795,12 @@ of the quadcopter when it is flying</text>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="101.6" x2="175.26" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="101.6" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="109.22" x2="147.32" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="109.22" x2="144.78" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="2"/>
@@ -1970,21 +1970,36 @@ of the quadcopter when it is flying</text>
 <wire x1="416.56" y1="220.98" x2="416.56" y2="218.44" width="0.1524" layer="91"/>
 <junction x="416.56" y="220.98"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="TST"/>
+<pinref part="GND36" gate="1" pin="GND"/>
+<wire x1="124.46" y1="114.3" x2="132.08" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="CLKI"/>
+<pinref part="GND35" gate="1" pin="GND"/>
+<wire x1="124.46" y1="81.28" x2="137.16" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND37" gate="1" pin="GND"/>
+<pinref part="U2" gate="G$1" pin="DEN_G"/>
+<wire x1="358.14" y1="220.98" x2="363.22" y2="220.98" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="DVDD"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="91.44" x2="167.64" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="91.44" x2="167.64" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="91.44" x2="172.72" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="91.44" x2="172.72" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="AVDD"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="93.98" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="93.98" x2="177.8" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="93.98" x2="182.88" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="93.98" x2="182.88" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -1992,8 +2007,8 @@ of the quadcopter when it is flying</text>
 <pinref part="U1" gate="G$1" pin="RFN"/>
 <wire x1="124.46" y1="106.68" x2="137.16" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="106.68" x2="137.16" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="101.6" x2="144.78" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="B1" gate="G$1" pin="OUT2"/>
+<wire x1="137.16" y1="101.6" x2="157.48" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -2001,40 +2016,26 @@ of the quadcopter when it is flying</text>
 <pinref part="U1" gate="G$1" pin="RFP"/>
 <wire x1="124.46" y1="109.22" x2="137.16" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="109.22" x2="137.16" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="116.84" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="R15" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<wire x1="154.94" y1="116.84" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="B1" gate="G$1" pin="OUT1"/>
-<pinref part="R15" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="B1" gate="G$1" pin="OUT2"/>
-<wire x1="154.94" y1="101.6" x2="160.02" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="116.84" x2="157.48" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="IN"/>
-<wire x1="165.1" y1="116.84" x2="175.26" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="116.84" x2="170.18" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="SIGNAL"/>
-<wire x1="175.26" y1="119.38" x2="175.26" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="119.38" x2="170.18" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="116.84" x2="175.26" y2="111.76" width="0.1524" layer="91"/>
-<junction x="175.26" y="116.84"/>
+<wire x1="170.18" y1="116.84" x2="170.18" y2="111.76" width="0.1524" layer="91"/>
+<junction x="170.18" y="116.84"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="B1" gate="G$1" pin="GND@2"/>
-<wire x1="154.94" y1="109.22" x2="157.48" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="109.22" x2="154.94" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3V" class="0">
@@ -2120,14 +2121,10 @@ of the quadcopter when it is flying</text>
 <wire x1="350.52" y1="210.82" x2="347.98" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="210.82" x2="347.98" y2="215.9" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="P$1"/>
-<wire x1="347.98" y1="215.9" x2="347.98" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="347.98" y1="220.98" x2="347.98" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="215.9" x2="347.98" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="215.9" x2="350.52" y2="215.9" width="0.1524" layer="91"/>
 <junction x="347.98" y="215.9"/>
-<pinref part="R14" gate="G$1" pin="P$1"/>
-<wire x1="350.52" y1="220.98" x2="347.98" y2="220.98" width="0.1524" layer="91"/>
-<junction x="347.98" y="220.98"/>
-<label x="347.98" y="223.52" size="1.27" layer="95" rot="R90" xref="yes"/>
+<label x="347.98" y="218.44" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C18" gate="G$1" pin="1"/>
@@ -2203,20 +2200,6 @@ of the quadcopter when it is flying</text>
 <pinref part="U1" gate="G$1" pin="RSTON"/>
 <wire x1="124.46" y1="116.84" x2="127" y2="116.84" width="0.1524" layer="91"/>
 <label x="127" y="116.84" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="TST" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="TST"/>
-<wire x1="124.46" y1="114.3" x2="127" y2="114.3" width="0.1524" layer="91"/>
-<label x="127" y="114.3" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="CLKI" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="CLKI"/>
-<wire x1="124.46" y1="81.28" x2="127" y2="81.28" width="0.1524" layer="91"/>
-<label x="127" y="81.28" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SSN" class="0">
@@ -2751,13 +2734,6 @@ of the quadcopter when it is flying</text>
 <wire x1="360.68" y1="210.82" x2="363.22" y2="210.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="DEN_G"/>
-<pinref part="R14" gate="G$1" pin="P$2"/>
-<wire x1="363.22" y1="220.98" x2="360.68" y2="220.98" width="0.1524" layer="91"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
@@ -2780,7 +2756,6 @@ of the quadcopter when it is flying</text>
 <approved hash="106,1,124.46,58.42,A6,,,,,"/>
 <approved hash="106,1,124.46,55.88,A7,,,,,"/>
 <approved hash="106,1,124.46,76.2,AREF,,,,,"/>
-<approved hash="106,1,124.46,81.28,CLKI,,,,,"/>
 <approved hash="106,1,68.58,116.84,PB4,,,,,"/>
 <approved hash="106,1,68.58,93.98,PD4,,,,,"/>
 <approved hash="106,1,68.58,91.44,PD5,,,,,"/>
@@ -2797,7 +2772,13 @@ of the quadcopter when it is flying</text>
 <approved hash="106,1,68.58,45.72,PG5,,,,,"/>
 <approved hash="106,1,124.46,116.84,RSTON,,,,,"/>
 <approved hash="106,1,68.58,127,SSN,,,,,"/>
-<approved hash="106,1,124.46,114.3,TST,,,,,"/>
+<approved hash="113,1,215.796,139.596,FRAME1,,,,,"/>
+<approved hash="113,1,27.2627,231.335,JP1,,,,,"/>
+<approved hash="113,1,36.83,229.878,S1,,,,,"/>
+<approved hash="113,1,240.623,246.575,JP4,,,,,"/>
+<approved hash="113,1,240.623,185.615,JP5,,,,,"/>
+<approved hash="113,1,283.803,246.575,JP6,,,,,"/>
+<approved hash="113,1,283.803,185.615,JP7,,,,,"/>
 </errors>
 </schematic>
 </drawing>
