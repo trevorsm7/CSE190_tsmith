@@ -1209,32 +1209,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="-2.2" y1="-2.2" x2="-2.2" y2="-1.7" width="0.1" layer="21"/>
 <wire x1="-2.2" y1="2.2" x2="-2.2" y2="1.7" width="0.1" layer="21"/>
 </package>
-<package name="CFR-12">
-<pad name="P$1" x="-3" y="0" drill="0.9" diameter="1.8796"/>
-<pad name="P$2" x="3" y="0" drill="0.9" diameter="1.8796"/>
-<wire x1="-2" y1="1" x2="2" y2="1" width="0.127" layer="21"/>
-<wire x1="2" y1="-1" x2="-2" y2="-1" width="0.127" layer="21"/>
-<wire x1="-2" y1="1" x2="-2" y2="-1" width="0.127" layer="21"/>
-<wire x1="2" y1="1" x2="2" y2="-1" width="0.127" layer="21"/>
-<text x="-3" y="1.5" size="1" layer="25">&gt;NAME</text>
-<text x="3" y="-1.5" size="1" layer="27" align="top-right">&gt;VALUE</text>
-<wire x1="-4.5" y1="1.5" x2="4.5" y2="1.5" width="0.127" layer="39"/>
-<wire x1="4.5" y1="1.5" x2="4.5" y2="-1.5" width="0.127" layer="39"/>
-<wire x1="4.5" y1="-1.5" x2="-4.5" y2="-1.5" width="0.127" layer="39"/>
-<wire x1="-4.5" y1="-1.5" x2="-4.5" y2="1.5" width="0.127" layer="39"/>
-</package>
-<package name="RC0805">
-<smd name="P$1" x="-1.025" y="0" dx="1.05" dy="1.35" layer="1"/>
-<smd name="P$2" x="1.025" y="0" dx="1.05" dy="1.35" layer="1"/>
-<wire x1="-0.3" y1="0.7" x2="0.3" y2="0.7" width="0.1" layer="21"/>
-<wire x1="-0.3" y1="-0.7" x2="0.3" y2="-0.7" width="0.1" layer="21"/>
-<text x="-1.6" y="0.9" size="0.6" layer="25">&gt;NAME</text>
-<text x="1.6" y="-0.9" size="0.6" layer="27" align="top-right">&gt;VALUE</text>
-<wire x1="-1.7" y1="0.8" x2="1.7" y2="0.8" width="0.127" layer="39"/>
-<wire x1="1.7" y1="0.8" x2="1.7" y2="-0.8" width="0.127" layer="39"/>
-<wire x1="1.7" y1="-0.8" x2="-1.7" y2="-0.8" width="0.127" layer="39"/>
-<wire x1="-1.7" y1="-0.8" x2="-1.7" y2="0.8" width="0.127" layer="39"/>
-</package>
 </packages>
 <symbols>
 <symbol name="N-MOSFET">
@@ -1322,21 +1296,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="-17.78" y1="-33.02" x2="-17.78" y2="33.02" width="0.254" layer="94"/>
 <text x="-17.78" y="35.56" size="2.54" layer="95">&gt;NAME</text>
 </symbol>
-<symbol name="RESISTOR">
-<pin name="P$1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-<pin name="P$2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<text x="0" y="1.5875" size="1.524" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.5875" size="1.524" layer="97" align="top-center">&gt;VALUE</text>
-<wire x1="-2.54" y1="0" x2="-2.2225" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="-2.2225" y1="1.27" x2="-1.5875" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="-1.5875" y1="-1.27" x2="-0.9525" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="-0.9525" y1="1.27" x2="-0.3175" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="-0.3175" y1="-1.27" x2="0.3175" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0.3175" y1="1.27" x2="0.9525" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="0.9525" y1="-1.27" x2="1.5875" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="1.5875" y1="1.27" x2="2.2225" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="2.2225" y1="-1.27" x2="2.54" y2="0" width="0.1524" layer="94"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SI2302CDS" prefix="Q">
@@ -1422,41 +1381,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESISTOR" prefix="R" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-CFR12" package="CFR-12">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="Trevor Smith"/>
-<attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value="330EBK-ND" constant="no"/>
-<attribute name="TOL" value="5%"/>
-</technology>
-</technologies>
-</device>
-<device name="-0805" package="RC0805">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="Trevor Smith"/>
-<attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value="311-330CRCT-ND" constant="no"/>
-<attribute name="TOL" value="1%"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1494,10 +1418,10 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="C10" library="Lab5" deviceset="C-US" device="C0805" value="1uF"/>
 <part name="GND10" library="Lab5" deviceset="GND" device=""/>
 <part name="GND11" library="Lab5" deviceset="GND" device=""/>
-<part name="LED1" library="Lab5" deviceset="LED" device="CHIP-LED0805" value="BLUE"/>
-<part name="LED2" library="Lab5" deviceset="LED" device="CHIP-LED0805" value="BLUE"/>
-<part name="R2" library="Lab5" deviceset="R-US_" device="R0805" value="300"/>
-<part name="R3" library="Lab5" deviceset="R-US_" device="R0805" value="300"/>
+<part name="LED1" library="Lab5" deviceset="LED" device="CHIP-LED0805" value="ORANGE"/>
+<part name="LED2" library="Lab5" deviceset="LED" device="CHIP-LED0805" value="YELLOW"/>
+<part name="R2" library="Lab5" deviceset="R-US_" device="R0805" value="270"/>
+<part name="R3" library="Lab5" deviceset="R-US_" device="R0805" value="270"/>
 <part name="GND12" library="Lab5" deviceset="GND" device=""/>
 <part name="GND13" library="Lab5" deviceset="GND" device=""/>
 <part name="U$2" library="Lab5" deviceset="LP3985IM5-3.0" device=""/>
@@ -1551,20 +1475,20 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="LED5" library="Lab5" deviceset="LED" device="CHIP-LED0805" value="RED"/>
 <part name="LED6" library="Lab5" deviceset="LED" device="CHIP-LED0805" value="GREEN"/>
 <part name="LED7" library="Lab5" deviceset="LED" device="CHIP-LED0805" value="RED"/>
-<part name="R4" library="Lab5" deviceset="R-US_" device="R0805" value="300"/>
-<part name="R9" library="Lab5" deviceset="R-US_" device="R0805" value="300"/>
-<part name="R10" library="Lab5" deviceset="R-US_" device="R0805" value="300"/>
-<part name="R11" library="Lab5" deviceset="R-US_" device="R0805" value="300"/>
+<part name="R4" library="Lab5" deviceset="R-US_" device="R0805" value="30"/>
+<part name="R9" library="Lab5" deviceset="R-US_" device="R0805" value="100"/>
+<part name="R10" library="Lab5" deviceset="R-US_" device="R0805" value="30"/>
+<part name="R11" library="Lab5" deviceset="R-US_" device="R0805" value="100"/>
 <part name="GND19" library="Lab5" deviceset="GND" device=""/>
 <part name="GND31" library="Lab5" deviceset="GND" device=""/>
 <part name="GND32" library="Lab5" deviceset="GND" device=""/>
 <part name="GND33" library="Lab5" deviceset="GND" device=""/>
-<part name="R12" library="Trevor-lab4" deviceset="RESISTOR" device="-0805" value="10k"/>
-<part name="R13" library="Trevor-lab4" deviceset="RESISTOR" device="-0805" value="10k"/>
 <part name="GND34" library="Lab5" deviceset="GND" device=""/>
 <part name="GND35" library="Lab5" deviceset="GND" device=""/>
 <part name="GND36" library="Lab5" deviceset="GND" device=""/>
 <part name="GND37" library="Lab5" deviceset="GND" device=""/>
+<part name="R12" library="Lab5" deviceset="R-US_" device="R0805"/>
+<part name="R13" library="Lab5" deviceset="R-US_" device="R0805"/>
 </parts>
 <sheets>
 <sheet>
@@ -1711,12 +1635,12 @@ of the quadcopter when it is flying</text>
 <instance part="GND31" gate="1" x="231.14" y="30.48"/>
 <instance part="GND32" gate="1" x="254" y="76.2"/>
 <instance part="GND33" gate="1" x="254" y="30.48"/>
-<instance part="R12" gate="G$1" x="355.6" y="215.9"/>
-<instance part="R13" gate="G$1" x="355.6" y="210.82"/>
 <instance part="GND34" gate="1" x="416.56" y="215.9"/>
 <instance part="GND35" gate="1" x="137.16" y="78.74"/>
 <instance part="GND36" gate="1" x="132.08" y="111.76"/>
 <instance part="GND37" gate="1" x="358.14" y="223.52" rot="R180"/>
+<instance part="R12" gate="G$1" x="355.6" y="215.9"/>
+<instance part="R13" gate="G$1" x="355.6" y="210.82"/>
 </instances>
 <busses>
 </busses>
@@ -2097,34 +2021,14 @@ of the quadcopter when it is flying</text>
 <junction x="96.52" y="233.68"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="101.6" x2="231.14" y2="99.06" width="0.1524" layer="91"/>
-<label x="231.14" y="101.6" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="254" y1="101.6" x2="254" y2="99.06" width="0.1524" layer="91"/>
-<label x="254" y="101.6" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="53.34" x2="231.14" y2="55.88" width="0.1524" layer="91"/>
-<label x="231.14" y="55.88" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="254" y1="53.34" x2="254" y2="55.88" width="0.1524" layer="91"/>
-<label x="254" y="55.88" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R13" gate="G$1" pin="P$1"/>
 <wire x1="350.52" y1="210.82" x2="347.98" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="210.82" x2="347.98" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="R12" gate="G$1" pin="P$1"/>
 <wire x1="347.98" y1="215.9" x2="347.98" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="215.9" x2="350.52" y2="215.9" width="0.1524" layer="91"/>
 <junction x="347.98" y="215.9"/>
 <label x="347.98" y="218.44" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="R13" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="C18" gate="G$1" pin="1"/>
@@ -2580,6 +2484,26 @@ of the quadcopter when it is flying</text>
 <wire x1="290.83" y1="190.5" x2="290.83" y2="189.23" width="0.1524" layer="91"/>
 <junction x="287.02" y="190.5"/>
 </segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="231.14" y1="101.6" x2="231.14" y2="99.06" width="0.1524" layer="91"/>
+<label x="231.14" y="101.6" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="254" y1="101.6" x2="254" y2="99.06" width="0.1524" layer="91"/>
+<label x="254" y="101.6" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="231.14" y1="53.34" x2="231.14" y2="55.88" width="0.1524" layer="91"/>
+<label x="231.14" y="55.88" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="254" y1="53.34" x2="254" y2="55.88" width="0.1524" layer="91"/>
+<label x="254" y="55.88" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="N$16" class="0">
 <segment>
@@ -2723,15 +2647,15 @@ of the quadcopter when it is flying</text>
 <net name="N$27" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="CS_G"/>
-<pinref part="R12" gate="G$1" pin="P$2"/>
 <wire x1="360.68" y1="215.9" x2="363.22" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="CS_XM"/>
-<pinref part="R13" gate="G$1" pin="P$2"/>
 <wire x1="360.68" y1="210.82" x2="363.22" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
