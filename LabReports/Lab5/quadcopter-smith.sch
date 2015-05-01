@@ -1488,8 +1488,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="GND35" library="Lab5" deviceset="GND" device=""/>
 <part name="GND36" library="Lab5" deviceset="GND" device=""/>
 <part name="GND37" library="Lab5" deviceset="GND" device=""/>
-<part name="R12" library="Lab5" deviceset="R-US_" device="R0805"/>
-<part name="R13" library="Lab5" deviceset="R-US_" device="R0805"/>
+<part name="R12" library="Lab5" deviceset="R-US_" device="R0805" value="10k"/>
+<part name="R13" library="Lab5" deviceset="R-US_" device="R0805" value="10k"/>
 </parts>
 <sheets>
 <sheet>
