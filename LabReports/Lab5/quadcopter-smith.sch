@@ -1391,6 +1391,10 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="VBAT" width="0.4572" drill="0.4572">
+</class>
+<class number="2" name="ANTENNA" width="0.4572" drill="0.4572">
+</class>
 </classes>
 <parts>
 <part name="FRAME1" library="Lab5" deviceset="FRAME_B_L" device=""/>
@@ -1668,7 +1672,7 @@ of the quadcopter when it is flying</text>
 <junction x="144.78" y="83.82"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -1944,7 +1948,7 @@ of the quadcopter when it is flying</text>
 <wire x1="137.16" y1="116.84" x2="157.48" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="N$9" class="2">
 <segment>
 <pinref part="B1" gate="G$1" pin="IN"/>
 <wire x1="162.56" y1="116.84" x2="170.18" y2="116.84" width="0.1524" layer="91"/>
@@ -2425,7 +2429,7 @@ of the quadcopter when it is flying</text>
 <wire x1="38.1" y1="60.96" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VBAT" class="0">
+<net name="VBAT" class="1">
 <segment>
 <pinref part="U$2" gate="G$1" pin="IN"/>
 <wire x1="40.64" y1="233.68" x2="43.18" y2="233.68" width="0.1524" layer="91"/>
@@ -2560,7 +2564,7 @@ of the quadcopter when it is flying</text>
 <junction x="243.84" y="238.76"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="N$11" class="1">
 <segment>
 <pinref part="JP5" gate="G$1" pin="1"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
@@ -2620,7 +2624,7 @@ of the quadcopter when it is flying</text>
 <wire x1="398.78" y1="167.64" x2="396.24" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="N$14" class="1">
 <segment>
 <pinref part="LED4" gate="G$1" pin="A"/>
 <pinref part="R4" gate="G$1" pin="1"/>
