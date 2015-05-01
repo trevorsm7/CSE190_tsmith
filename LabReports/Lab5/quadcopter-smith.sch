@@ -231,7 +231,6 @@ by exp-lbrs.ulp</description>
 <smd name="62" x="-2.75" y="4.881" dx="0.28" dy="1.562" layer="1"/>
 <smd name="63" x="-3.25" y="4.881" dx="0.28" dy="1.562" layer="1"/>
 <smd name="64" x="-3.75" y="4.881" dx="0.28" dy="1.562" layer="1"/>
-<smd name="65" x="0" y="0" dx="6.4516" dy="6.4516" layer="1" rot="R90" cream="no"/>
 <text x="-3.766" y="-3.1578" size="0.4064" layer="25" ratio="12">&gt;NAME</text>
 <text x="-3.766" y="-3.77" size="0.4064" layer="27" ratio="12">&gt;VALUE</text>
 </package>
@@ -469,12 +468,12 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
 <rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
 <rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
-<pad name="1" x="-2.54" y="-1.27" drill="1.016" diameter="1.8796" shape="square"/>
-<pad name="2" x="-2.54" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="3" x="0" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="4" x="0" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="5" x="2.54" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
-<pad name="6" x="2.54" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
+<pad name="1" x="-2.54" y="-1.27" drill="1.016" diameter="1.8034" shape="square"/>
+<pad name="2" x="-2.54" y="1.27" drill="1.016" diameter="1.8034" shape="octagon"/>
+<pad name="3" x="0" y="-1.27" drill="1.016" diameter="1.8034" shape="octagon"/>
+<pad name="4" x="0" y="1.27" drill="1.016" diameter="1.8034" shape="octagon"/>
+<pad name="5" x="2.54" y="-1.27" drill="1.016" diameter="1.8034" shape="octagon"/>
+<pad name="6" x="2.54" y="1.27" drill="1.016" diameter="1.8034" shape="octagon"/>
 <text x="-3.81" y="-4.445" size="1.27" layer="27">&gt;VALUE</text>
 <text x="-3.81" y="3.175" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
@@ -529,7 +528,6 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <pin name="DVDD" x="-27.94" y="5.08" length="short"/>
 <pin name="DVSS" x="-27.94" y="-38.1" length="short"/>
 <pin name="EVDD" x="-27.94" y="40.64" length="short"/>
-<pin name="PADDLE" x="-27.94" y="-40.64" length="short"/>
 <pin name="PB0(SSN/PCINT0)" x="27.94" y="40.64" length="short" rot="R180"/>
 <pin name="PB1(SCK/PCINT1)" x="27.94" y="38.1" length="short" rot="R180"/>
 <pin name="PB2(MOSI/PDI/PCINT2)" x="27.94" y="35.56" length="short" rot="R180"/>
@@ -789,7 +787,6 @@ Source: http://www.osram.convergy.de/ ... lb_r99a.pdf</description>
 <connect gate="G$1" pin="DVDD" pad="21 22"/>
 <connect gate="G$1" pin="DVSS" pad="20 24 35 45 55"/>
 <connect gate="G$1" pin="EVDD" pad="59"/>
-<connect gate="G$1" pin="PADDLE" pad="65"/>
 <connect gate="G$1" pin="PB0(SSN/PCINT0)" pad="36"/>
 <connect gate="G$1" pin="PB1(SCK/PCINT1)" pad="37"/>
 <connect gate="G$1" pin="PB2(MOSI/PDI/PCINT2)" pad="38"/>
@@ -1169,31 +1166,31 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="-2.1" y1="-1" x2="-2.1" y2="1" width="0.127" layer="39"/>
 </package>
 <package name="LGA-24">
-<smd name="P$1" x="-2.25" y="1.25" dx="0.3" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$1" x="-2.3" y="1.25" dx="0.28" dy="1.5" layer="1" rot="R90"/>
 <wire x1="-1.71" y1="-2.2" x2="-2.2" y2="-2.2" width="0.1" layer="21"/>
-<smd name="P$7" x="-1.25" y="-2.25" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$2" x="-2.25" y="0.75" dx="0.3" dy="1.5" layer="1" rot="R90"/>
-<smd name="P$3" x="-2.25" y="0.25" dx="0.3" dy="1.5" layer="1" rot="R90"/>
-<smd name="P$4" x="-2.25" y="-0.25" dx="0.3" dy="1.5" layer="1" rot="R90"/>
-<smd name="P$5" x="-2.25" y="-0.75" dx="0.3" dy="1.5" layer="1" rot="R90"/>
-<smd name="P$6" x="-2.25" y="-1.25" dx="0.3" dy="1.5" layer="1" rot="R90"/>
-<smd name="P$8" x="-0.75" y="-2.25" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$9" x="-0.25" y="-2.25" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$10" x="0.25" y="-2.25" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$11" x="0.75" y="-2.25" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$12" x="1.25" y="-2.25" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$13" x="2.25" y="-1.25" dx="0.3" dy="1.5" layer="1" rot="R90"/>
-<smd name="P$14" x="2.25" y="-0.75" dx="0.3" dy="1.5" layer="1" rot="R90"/>
-<smd name="P$15" x="2.25" y="-0.25" dx="0.3" dy="1.5" layer="1" rot="R90"/>
-<smd name="P$16" x="2.25" y="0.25" dx="0.3" dy="1.5" layer="1" rot="R90"/>
-<smd name="P$17" x="2.25" y="0.75" dx="0.3" dy="1.5" layer="1" rot="R90"/>
-<smd name="P$18" x="2.25" y="1.25" dx="0.3" dy="1.5" layer="1" rot="R90"/>
-<smd name="P$19" x="1.25" y="2.25" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$20" x="0.75" y="2.25" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$21" x="0.25" y="2.25" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$22" x="-0.25" y="2.25" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$23" x="-0.75" y="2.25" dx="1.5" dy="0.3" layer="1" rot="R90"/>
-<smd name="P$24" x="-1.25" y="2.25" dx="1.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$7" x="-1.25" y="-2.3" dx="1.5" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$2" x="-2.3" y="0.75" dx="0.28" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$3" x="-2.3" y="0.25" dx="0.28" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$4" x="-2.3" y="-0.25" dx="0.28" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$5" x="-2.3" y="-0.75" dx="0.28" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$6" x="-2.3" y="-1.25" dx="0.28" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$8" x="-0.75" y="-2.3" dx="1.5" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$9" x="-0.25" y="-2.3" dx="1.5" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$10" x="0.25" y="-2.3" dx="1.5" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$11" x="0.75" y="-2.3" dx="1.5" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$12" x="1.25" y="-2.3" dx="1.5" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$13" x="2.3" y="-1.25" dx="0.28" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$14" x="2.3" y="-0.75" dx="0.28" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$15" x="2.3" y="-0.25" dx="0.28" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$16" x="2.3" y="0.25" dx="0.28" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$17" x="2.3" y="0.75" dx="0.28" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$18" x="2.3" y="1.25" dx="0.28" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$19" x="1.25" y="2.3" dx="1.5" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$20" x="0.75" y="2.3" dx="1.5" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$21" x="0.25" y="2.3" dx="1.5" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$22" x="-0.25" y="2.3" dx="1.5" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$23" x="-0.75" y="2.3" dx="1.5" dy="0.28" layer="1" rot="R90"/>
+<smd name="P$24" x="-1.25" y="2.3" dx="1.5" dy="0.28" layer="1" rot="R90"/>
 <circle x="-1.75" y="1.75" radius="0.075" width="0.15" layer="21"/>
 <text x="0" y="3.2" size="1" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-3.2" size="1" layer="27" align="top-center">&gt;VALUE</text>
@@ -1672,7 +1669,7 @@ of the quadcopter when it is flying</text>
 <junction x="144.78" y="83.82"/>
 </segment>
 </net>
-<net name="GND" class="1">
+<net name="GND" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -1699,13 +1696,9 @@ of the quadcopter when it is flying</text>
 <wire x1="124.46" y1="50.8" x2="129.54" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="50.8" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="DVSS"/>
-<wire x1="129.54" y1="48.26" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="45.72" x2="129.54" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="48.26" x2="129.54" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="48.26" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="PADDLE"/>
-<wire x1="124.46" y1="45.72" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
 <junction x="129.54" y="48.26"/>
-<junction x="129.54" y="45.72"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="AVSS_RFN"/>
@@ -1948,7 +1941,7 @@ of the quadcopter when it is flying</text>
 <wire x1="137.16" y1="116.84" x2="157.48" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="2">
+<net name="N$9" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="IN"/>
 <wire x1="162.56" y1="116.84" x2="170.18" y2="116.84" width="0.1524" layer="91"/>
@@ -2429,7 +2422,7 @@ of the quadcopter when it is flying</text>
 <wire x1="38.1" y1="60.96" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VBAT" class="1">
+<net name="VBAT" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="IN"/>
 <wire x1="40.64" y1="233.68" x2="43.18" y2="233.68" width="0.1524" layer="91"/>
@@ -2624,7 +2617,7 @@ of the quadcopter when it is flying</text>
 <wire x1="398.78" y1="167.64" x2="396.24" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="1">
+<net name="N$14" class="0">
 <segment>
 <pinref part="LED4" gate="G$1" pin="A"/>
 <pinref part="R4" gate="G$1" pin="1"/>
