@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
@@ -161,6 +161,22 @@
 <wire x1="-19.5" y1="22.5" x2="-39.5" y2="42.5" width="0.4064" layer="20"/>
 <wire x1="-39.5" y1="42.5" x2="-42.5" y2="39.5" width="0.4064" layer="20"/>
 <wire x1="-42.5" y1="39.5" x2="-22.5" y2="19.5" width="0.4064" layer="20"/>
+<text x="17.5" y="-3.25" size="1" layer="21" ratio="10">GND</text>
+<text x="-17" y="-2.75" size="1" layer="21" ratio="10" rot="R270">DEBUGGER</text>
+<text x="-20.25" y="1.75" size="1" layer="21" ratio="10">GND</text>
+<wire x1="16.5" y1="-2.75" x2="17.25" y2="-2.75" width="0.2" layer="21"/>
+<wire x1="19" y1="-1.5" x2="19" y2="-2" width="0.2" layer="21"/>
+<wire x1="-19" y1="1" x2="-19" y2="1.5" width="0.2" layer="21"/>
+<wire x1="1" y1="-2.75" x2="-0.25" y2="-2.75" width="0.2" layer="25"/>
+<wire x1="-0.25" y1="-2.75" x2="-0.5" y2="-2.5" width="0.2" layer="25"/>
+<wire x1="-3.75" y1="-14.5" x2="-3.75" y2="-13.25" width="0.1" layer="21"/>
+<wire x1="-3.75" y1="-13.25" x2="-4" y2="-13.75" width="0.1" layer="21"/>
+<wire x1="-3.75" y1="-13.25" x2="-3.5" y2="-13.75" width="0.1" layer="21"/>
+<wire x1="-3.75" y1="-14.5" x2="-5" y2="-14.5" width="0.1" layer="21"/>
+<wire x1="-5" y1="-14.5" x2="-4.5" y2="-14.25" width="0.1" layer="21"/>
+<wire x1="-5" y1="-14.5" x2="-4.5" y2="-14.75" width="0.1" layer="21"/>
+<text x="-4.25" y="-13" size="1" layer="21">X</text>
+<text x="-5.75" y="-14.75" size="1" layer="21">Y</text>
 </plain>
 <libraries>
 <library name="Lab5">
@@ -767,102 +783,233 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="B1" library="Lab5" package="BALUN" value="BALUN0805" x="-11" y="7"/>
-<element name="C1" library="Lab5" package="C0805" value="12pF" x="2" y="17.5" rot="R90"/>
-<element name="C10" library="Lab5" package="C0805" value="1uF" x="7.5" y="9.5" rot="R90"/>
-<element name="C11" library="Lab5" package="C0805" value="0.1uF" x="15" y="12.5" rot="R180"/>
-<element name="C12" library="Lab5" package="C0805" value="1uF" x="18.5" y="-12" rot="R180"/>
-<element name="C13" library="Lab5" package="C0805" value="1uF" x="14.5" y="-9" rot="R90"/>
-<element name="C14" library="Lab5" package="C0805" value=".01uF" x="15.5" y="-5.5" rot="R180"/>
-<element name="C15" library="Lab5" package="C0805" value="4.7uF" x="-5" y="-9.5" rot="R90"/>
-<element name="C16" library="Lab5" package="C0805" value=".22uF" x="-0.5" y="-13" rot="R180"/>
-<element name="C17" library="Lab5" package="C0805" value="10uF" x="5" y="-7" rot="R90"/>
-<element name="C18" library="Lab5" package="C0805" value="100nF" x="7.5" y="-7" rot="R90"/>
-<element name="C2" library="Lab5" package="C0805" value="12pF" x="-5" y="17.5" rot="R270"/>
-<element name="C3" library="Lab5" package="C0805" value="1uF" x="-5.5" y="-1" rot="R270"/>
-<element name="C4" library="Lab5" package="C0805" value="1uF" x="-6" y="14.25" rot="R180"/>
-<element name="C5" library="Lab5" package="C0805" value="22pF" x="-9.5" y="3" rot="R270"/>
-<element name="C8" library="Lab5" package="C0805" value="0.75pF" x="-12" y="3" rot="R270"/>
-<element name="C9" library="Lab5" package="C0805" value="1uF" x="-3" y="-2.5" rot="R270"/>
-<element name="D1" library="Trevor-lab4" package="SOD-323" value="BAS16WS" x="-16" y="-16" rot="R135">
+<element name="B1" library="Lab5" package="BALUN" value="BALUN0805" x="-11" y="7" smashed="yes">
+<attribute name="VALUE" x="-9.4" y="6.3" size="0.508" layer="27" rot="R90"/>
+</element>
+<element name="C1" library="Lab5" package="C0805" value="12pF" x="2" y="17.5" smashed="yes" rot="R90">
+<attribute name="VALUE" x="4.54" y="16.23" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="0.98" y="19.73" size="1.27" layer="25"/>
+</element>
+<element name="C10" library="Lab5" package="C0805" value="1uF" x="7.5" y="9.5" smashed="yes" rot="R90">
+<attribute name="VALUE" x="10.04" y="8.23" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="6.48" y="7.73" size="1.27" layer="25" rot="R90"/>
+</element>
+<element name="C11" library="Lab5" package="C0805" value="0.1uF" x="15" y="12.5" smashed="yes" rot="R180">
+<attribute name="VALUE" x="16.27" y="15.04" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="17.02" y="11.48" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="C12" library="Lab5" package="C0805" value="1uF" x="18.5" y="-12" smashed="yes" rot="R180">
+<attribute name="VALUE" x="19.77" y="-9.46" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="21.02" y="-13.02" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="C13" library="Lab5" package="C0805" value="1uF" x="14.5" y="-9" smashed="yes" rot="R90">
+<attribute name="VALUE" x="17.04" y="-10.27" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="13.48" y="-10.52" size="1.27" layer="25" rot="R90"/>
+</element>
+<element name="C14" library="Lab5" package="C0805" value=".01uF" x="15.5" y="-5.5" smashed="yes" rot="R180">
+<attribute name="VALUE" x="16.77" y="-2.96" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="17.52" y="-3.52" size="1.27" layer="25" rot="R270"/>
+</element>
+<element name="C15" library="Lab5" package="C0805" value="4.7uF" x="-5" y="-9.5" smashed="yes" rot="R90">
+<attribute name="VALUE" x="-2.46" y="-10.77" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="-6.02" y="-11.27" size="1.27" layer="25" rot="R90"/>
+</element>
+<element name="C16" library="Lab5" package="C0805" value=".22uF" x="-0.5" y="-13" smashed="yes" rot="R180">
+<attribute name="VALUE" x="0.77" y="-10.46" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="1.27" y="-14.02" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="C17" library="Lab5" package="C0805" value="10uF" x="5" y="-7" smashed="yes" rot="R90">
+<attribute name="VALUE" x="7.54" y="-8.27" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="6.98" y="-9.02" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="C18" library="Lab5" package="C0805" value="100nF" x="7.5" y="-7" smashed="yes" rot="R90">
+<attribute name="VALUE" x="10.04" y="-8.27" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="9.98" y="-8.52" size="1.27" layer="25" rot="R90"/>
+</element>
+<element name="C2" library="Lab5" package="C0805" value="12pF" x="-5" y="17.5" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-7.54" y="18.77" size="1.27" layer="27" rot="R270"/>
+<attribute name="NAME" x="-5.98" y="19.77" size="1.27" layer="25"/>
+</element>
+<element name="C3" library="Lab5" package="C0805" value="1uF" x="-5.5" y="-1" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-8.04" y="0.27" size="1.27" layer="27" rot="R270"/>
+<attribute name="NAME" x="-6.48" y="-4.23" size="1.27" layer="25"/>
+</element>
+<element name="C4" library="Lab5" package="C0805" value="1uF" x="-6" y="14.25" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-4.73" y="16.79" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="-9.23" y="15.73" size="1.27" layer="25" rot="R270"/>
+</element>
+<element name="C5" library="Lab5" package="C0805" value="22pF" x="-9.5" y="3" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-12.04" y="4.27" size="1.27" layer="27" rot="R270"/>
+<attribute name="NAME" x="-10.48" y="-0.23" size="1.27" layer="25"/>
+</element>
+<element name="C8" library="Lab5" package="C0805" value="0.75pF" x="-12" y="3" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-14.54" y="4.27" size="1.27" layer="27" rot="R270"/>
+<attribute name="NAME" x="-12.98" y="-0.23" size="1.27" layer="25"/>
+</element>
+<element name="C9" library="Lab5" package="C0805" value="1uF" x="-3" y="-2.5" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-5.54" y="-1.23" size="1.27" layer="27" rot="R270"/>
+<attribute name="NAME" x="-3.98" y="-0.48" size="1.27" layer="25"/>
+</element>
+<element name="D1" library="Trevor-lab4" package="SOD-323" value="BAS16WS" x="-16" y="-16" smashed="yes" rot="R135">
 <attribute name="CREATOR" value="Trevor Smith" x="-16" y="-16" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="DISTPN" value="BAS16WS-E3-08CT-ND" x="-16" y="-16" size="1.778" layer="27" rot="R135" display="off"/>
 <attribute name="DIST" value="Digikey" x="-16" y="-16" size="1.778" layer="27" rot="R135" display="off"/>
+<attribute name="VALUE" x="-16.282840625" y="-14.302940625" size="0.5" layer="27" rot="R135" align="top-right"/>
 </element>
-<element name="D2" library="Trevor-lab4" package="SOD-323" value="BAS16WS" x="-16" y="16" rot="R225">
+<element name="D2" library="Trevor-lab4" package="SOD-323" value="BAS16WS" x="-16" y="16" smashed="yes" rot="R225">
 <attribute name="CREATOR" value="Trevor Smith" x="-16" y="16" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="DISTPN" value="BAS16WS-E3-08CT-ND" x="-16" y="16" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="DIST" value="Digikey" x="-16" y="16" size="1.778" layer="27" rot="R225" display="off"/>
+<attribute name="VALUE" x="-17.69705625" y="15.71715625" size="0.5" layer="27" rot="R225" align="top-right"/>
 </element>
-<element name="D3" library="Trevor-lab4" package="SOD-323" value="BAS16WS" x="16" y="-16" rot="R45">
-<attribute name="CREATOR" value="Trevor Smith" x="16" y="-16" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="DISTPN" value="BAS16WS-E3-08CT-ND" x="16" y="-16" size="1.778" layer="27" rot="R45" display="off"/>
-<attribute name="DIST" value="Digikey" x="16" y="-16" size="1.778" layer="27" rot="R45" display="off"/>
+<element name="D3" library="Trevor-lab4" package="SOD-323" value="BAS16WS" x="16" y="-15.75" smashed="yes" rot="R45">
+<attribute name="CREATOR" value="Trevor Smith" x="16" y="-15.75" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="DISTPN" value="BAS16WS-E3-08CT-ND" x="16" y="-15.75" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="DIST" value="Digikey" x="16" y="-15.75" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="VALUE" x="17.69705625" y="-15.46715625" size="0.5" layer="27" rot="R45" align="top-right"/>
 </element>
-<element name="D4" library="Trevor-lab4" package="SOD-323" value="BAS16WS" x="16" y="16" rot="R315">
+<element name="D4" library="Trevor-lab4" package="SOD-323" value="BAS16WS" x="16" y="16" smashed="yes" rot="R315">
 <attribute name="CREATOR" value="Trevor Smith" x="16" y="16" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="DISTPN" value="BAS16WS-E3-08CT-ND" x="16" y="16" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="DIST" value="Digikey" x="16" y="16" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="VALUE" x="16.282840625" y="14.302940625" size="0.5" layer="27" rot="R315" align="top-right"/>
 </element>
-<element name="J1" library="Lab5" package="2X3-NS" value="AVR_SPI_PRG_6NS" x="14" y="0" rot="R270"/>
-<element name="JP1" library="Lab5" package="1X02" value="" x="5" y="-12" rot="MR270"/>
-<element name="JP2" library="Lab5" package="FTDI_BASIC" value="FTDI_Programmer" x="19" y="12.5" rot="R270"/>
-<element name="JP3" library="Lab5" package="FTDI_BASIC" value="FTDI_Debug" x="-19" y="-13" rot="R90"/>
-<element name="JP4" library="Lab5" package="1X02" value="" x="-17.2" y="-19.05" rot="R135"/>
-<element name="JP5" library="Lab5" package="1X02" value="" x="-17.25" y="19" rot="R225"/>
-<element name="JP6" library="Lab5" package="1X02" value="" x="17.25" y="-19" rot="R45"/>
-<element name="JP7" library="Lab5" package="1X02" value="" x="17.25" y="19" rot="R315"/>
-<element name="LED1" library="Lab5" package="CHIP-LED0805" value="ORANGE" x="15" y="5.5" rot="R270"/>
-<element name="LED2" library="Lab5" package="CHIP-LED0805" value="YELLOW" x="15" y="8" rot="R270"/>
-<element name="LED4" library="Lab5" package="CHIP-LED0805" value="GREEN" x="-32.5" y="32.5" rot="R45"/>
-<element name="LED5" library="Lab5" package="CHIP-LED0805" value="RED" x="-32.5" y="-32.5" rot="R135"/>
-<element name="LED6" library="Lab5" package="CHIP-LED0805" value="GREEN" x="32.5" y="32.5" rot="R315"/>
-<element name="LED7" library="Lab5" package="CHIP-LED0805" value="RED" x="32.5" y="-32.5" rot="R225"/>
-<element name="Q1" library="Trevor-lab4" package="SOT-23" value="SI2302CDS" x="-10.75" y="-17.5" rot="R180">
+<element name="J1" library="Lab5" package="2X3-NS" value="AVR_SPI_PRG_6NS" x="14" y="0" smashed="yes" rot="R270">
+<attribute name="VALUE" x="9.555" y="3.81" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JP1" library="Lab5" package="1X02" value="" x="5" y="-12" smashed="yes" rot="R270">
+<attribute name="VALUE" x="1.825" y="-10.73" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JP2" library="Lab5" package="FTDI_BASIC" value="FTDI_Programmer" x="19" y="12.5" smashed="yes" rot="R270">
+<attribute name="VALUE" x="15.825" y="11.23" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="JP3" library="Lab5" package="FTDI_BASIC" value="FTDI_Debug" x="-19" y="-13" smashed="yes" rot="R90">
+<attribute name="VALUE" x="-15.825" y="-11.73" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="JP4" library="Lab5" package="1X02" value="" x="-17.2" y="-19.05" smashed="yes" rot="R135">
+<attribute name="VALUE" x="-14.056909375" y="-17.702959375" size="1.27" layer="27" rot="R135"/>
+</element>
+<element name="JP5" library="Lab5" package="1X02" value="" x="-17.25" y="19" smashed="yes" rot="R225">
+<attribute name="VALUE" x="-18.5970375" y="22.1430875" size="1.27" layer="27" rot="R225"/>
+</element>
+<element name="JP6" library="Lab5" package="1X02" value="" x="17.25" y="-18.75" smashed="yes" rot="R45">
+<attribute name="VALUE" x="18.5970375" y="-21.8930875" size="1.27" layer="27" rot="R45"/>
+</element>
+<element name="JP7" library="Lab5" package="1X02" value="" x="17.25" y="19" smashed="yes" rot="R315">
+<attribute name="VALUE" x="14.106909375" y="17.652959375" size="1.27" layer="27" rot="R315"/>
+</element>
+<element name="LED1" library="Lab5" package="CHIP-LED0805" value="ORANGE" x="15" y="5.5" smashed="yes" rot="R270">
+<attribute name="VALUE" x="13.73" y="2.96" size="1.27" layer="27"/>
+</element>
+<element name="LED2" library="Lab5" package="CHIP-LED0805" value="YELLOW" x="15" y="8" smashed="yes" rot="R270">
+<attribute name="VALUE" x="13.73" y="5.46" size="1.27" layer="27"/>
+</element>
+<element name="LED4" library="Lab5" package="CHIP-LED0805" value="GREEN" x="-32.5" y="32.5" smashed="yes" rot="R45">
+<attribute name="VALUE" x="-29.805921875" y="33.398025" size="1.27" layer="27" rot="R135"/>
+</element>
+<element name="LED5" library="Lab5" package="CHIP-LED0805" value="RED" x="-32.5" y="-32.5" smashed="yes" rot="R135">
+<attribute name="VALUE" x="-33.398025" y="-29.805921875" size="1.27" layer="27" rot="R225"/>
+</element>
+<element name="LED6" library="Lab5" package="CHIP-LED0805" value="GREEN" x="32.5" y="32.5" smashed="yes" rot="R315">
+<attribute name="VALUE" x="33.398025" y="29.805921875" size="1.27" layer="27" rot="R45"/>
+</element>
+<element name="LED7" library="Lab5" package="CHIP-LED0805" value="RED" x="32.5" y="-32.5" smashed="yes" rot="R225">
+<attribute name="VALUE" x="29.805921875" y="-33.398025" size="1.27" layer="27" rot="R315"/>
+</element>
+<element name="Q1" library="Trevor-lab4" package="SOT-23" value="SI2302CDS" x="-10.75" y="-17.5" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Trevor Smith" x="-10.75" y="-17.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="SI2302CDS-T1-E3" x="-10.75" y="-17.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="Digikey" x="-10.75" y="-17.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="-10.75" y="-15.7" size="1" layer="27" rot="R180" align="top-center"/>
 </element>
-<element name="Q2" library="Trevor-lab4" package="SOT-23" value="SI2302CDS" x="-11.5" y="18">
+<element name="Q2" library="Trevor-lab4" package="SOT-23" value="SI2302CDS" x="-11.5" y="18" smashed="yes">
 <attribute name="CREATOR" value="Trevor Smith" x="-11.5" y="18" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="SI2302CDS-T1-E3" x="-11.5" y="18" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Digikey" x="-11.5" y="18" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-11.5" y="16.2" size="1" layer="27" align="top-center"/>
 </element>
-<element name="Q3" library="Trevor-lab4" package="SOT-23" value="SI2302CDS" x="11.5" y="-17.5" rot="R180">
-<attribute name="CREATOR" value="Trevor Smith" x="11.5" y="-17.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="SI2302CDS-T1-E3" x="11.5" y="-17.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="Digikey" x="11.5" y="-17.5" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="Q3" library="Trevor-lab4" package="SOT-23" value="SI2302CDS" x="11.5" y="-17" smashed="yes" rot="R180">
+<attribute name="CREATOR" value="Trevor Smith" x="11.5" y="-17" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="SI2302CDS-T1-E3" x="11.5" y="-17" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digikey" x="11.5" y="-17" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="11.5" y="-15.2" size="1" layer="27" rot="R180" align="top-center"/>
 </element>
-<element name="Q4" library="Trevor-lab4" package="SOT-23" value="SI2302CDS" x="11.25" y="18">
+<element name="Q4" library="Trevor-lab4" package="SOT-23" value="SI2302CDS" x="11.25" y="18" smashed="yes">
 <attribute name="CREATOR" value="Trevor Smith" x="11.25" y="18" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="SI2302CDS-T1-E3" x="11.25" y="18" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Digikey" x="11.25" y="18" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="11.25" y="16.2" size="1" layer="27" align="top-center"/>
 </element>
-<element name="R1" library="Lab5" package="R0805" value="10k" x="-9" y="-2.5" rot="R270"/>
-<element name="R10" library="Lab5" package="R0805" value="30" x="26.5" y="26.5" rot="R225"/>
-<element name="R11" library="Lab5" package="R0805" value="100" x="26.5" y="-26.5" rot="R135"/>
-<element name="R2" library="Lab5" package="R0805" value="270" x="11" y="5.5" rot="R180"/>
-<element name="R3" library="Lab5" package="R0805" value="270" x="11" y="8" rot="R180"/>
-<element name="R4" library="Lab5" package="R0805" value="30" x="-26.5" y="26.5" rot="R315"/>
-<element name="R5" library="Lab5" package="R0805" value="10k" x="-10.5" y="-14.5" rot="R180"/>
-<element name="R6" library="Lab5" package="R0805" value="10k" x="-11.5" y="15"/>
-<element name="R7" library="Lab5" package="R0805" value="10k" x="11.5" y="-14.5" rot="R180"/>
-<element name="R8" library="Lab5" package="R0805" value="10k" x="11.25" y="15"/>
-<element name="R9" library="Lab5" package="R0805" value="100" x="-26.5" y="-26.5" rot="R45"/>
-<element name="S1" library="Lab5" package="SWITCH-SPDT" value="" x="0" y="-19" rot="R270">
+<element name="R1" library="Lab5" package="R0805" value="10k" x="-9" y="-2.5" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-11.286" y="-1.738" size="1.27" layer="27" rot="R270"/>
+<attribute name="NAME" x="-9.984" y="-5.738" size="1.27" layer="25"/>
+</element>
+<element name="R10" library="Lab5" package="R0805" value="30" x="26.5" y="26.5" smashed="yes" rot="R225">
+<attribute name="VALUE" x="25.42236875" y="28.655259375" size="1.27" layer="27" rot="R225"/>
+</element>
+<element name="R11" library="Lab5" package="R0805" value="100" x="26.5" y="-26.5" smashed="yes" rot="R135">
+<attribute name="VALUE" x="28.655259375" y="-25.42236875" size="1.27" layer="27" rot="R135"/>
+</element>
+<element name="R2" library="Lab5" package="R0805" value="270" x="11" y="5.5" smashed="yes" rot="R180">
+<attribute name="VALUE" x="11.762" y="7.786" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="7.762" y="6.734" size="1.27" layer="25" rot="R270"/>
+</element>
+<element name="R3" library="Lab5" package="R0805" value="270" x="11" y="8" smashed="yes" rot="R180">
+<attribute name="VALUE" x="11.762" y="10.286" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="12.262" y="10.234" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="R4" library="Lab5" package="R0805" value="30" x="-26.5" y="26.5" smashed="yes" rot="R315">
+<attribute name="VALUE" x="-28.655259375" y="25.42236875" size="1.27" layer="27" rot="R315"/>
+</element>
+<element name="R5" library="Lab5" package="R0805" value="10k" x="-10.5" y="-14.5" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-9.738" y="-12.214" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="-9.488" y="-12.266" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="R6" library="Lab5" package="R0805" value="10k" x="-11.5" y="15" smashed="yes">
+<attribute name="VALUE" x="-12.262" y="12.714" size="1.27" layer="27"/>
+<attribute name="NAME" x="-13.512" y="13.766" size="1.27" layer="25" rot="R90"/>
+</element>
+<element name="R7" library="Lab5" package="R0805" value="10k" x="11.5" y="-14" smashed="yes" rot="R180">
+<attribute name="VALUE" x="12.262" y="-11.714" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="11.762" y="-11.516" size="1.27" layer="25" rot="R180"/>
+</element>
+<element name="R8" library="Lab5" package="R0805" value="10k" x="11.25" y="15" smashed="yes">
+<attribute name="VALUE" x="10.488" y="12.714" size="1.27" layer="27"/>
+<attribute name="NAME" x="9.238" y="14.016" size="1.27" layer="25" rot="R90"/>
+</element>
+<element name="R9" library="Lab5" package="R0805" value="100" x="-26.5" y="-26.5" smashed="yes" rot="R45">
+<attribute name="VALUE" x="-25.42236875" y="-28.655259375" size="1.27" layer="27" rot="R45"/>
+</element>
+<element name="S1" library="Lab5" package="SWITCH-SPDT" value="" x="0" y="-19" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="SWCH-08261" x="0" y="-19" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="-9.525" y="-15.19" size="1.778" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="U$1" library="Lab5" package="ANTENNA-CHIP5" value="ANTENNA2SMD5" x="-17.25" y="6.25" rot="R180"/>
-<element name="U$2" library="Lab5" package="SOT23-DBV" value="LP3985IM5-3.0" x="18" y="-9" rot="R90"/>
-<element name="U1" library="Lab5" package="QFN-64" value="ATMEGA128RFA1" x="-1.5" y="7"/>
-<element name="U2" library="Trevor-lab4" package="LGA-24" value="LSM9DS0-LGA24" x="0" y="-8">
+<element name="U$1" library="Lab5" package="ANTENNA-CHIP5" value="ANTENNA2SMD5" x="-17.25" y="6.25" smashed="yes" rot="R180">
+<attribute name="VALUE" x="-14.71" y="7.012" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="U$2" library="Lab5" package="SOT23-DBV" value="LP3985IM5-3.0" x="18" y="-9" smashed="yes" rot="R90">
+<attribute name="VALUE" x="21.429" y="-10.905" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="U1" library="Lab5" package="QFN-64" value="ATMEGA128RFA1" x="-1.5" y="7" smashed="yes">
+<attribute name="VALUE" x="-5.266" y="3.23" size="0.4064" layer="27" ratio="12"/>
+</element>
+<element name="U2" library="Trevor-lab4" package="LGA-24" value="LSM9DS0-LGA24" x="0" y="-8" smashed="yes">
 <attribute name="CREATOR" value="Trevor Smith" x="0" y="-8" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="497-13902-1-ND" x="0" y="-8" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Digikey" x="0" y="-8" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="0" y="-11.2" size="1" layer="27" align="top-center"/>
 </element>
-<element name="Y1" library="Lab5" package="CRYSTAL-SMD-5X3" value="16MHz" x="-1.5" y="17.5" rot="R90"/>
-<element name="R12" library="Lab5" package="R0805" value="10k" x="4.5" y="-2.25" rot="R270"/>
-<element name="R13" library="Lab5" package="R0805" value="10k" x="2" y="-2.25" rot="R270"/>
+<element name="Y1" library="Lab5" package="CRYSTAL-SMD-5X3" value="16MHz" x="-1.5" y="17.5" smashed="yes" rot="R90">
+<attribute name="VALUE" x="1.04" y="14.96" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="R12" library="Lab5" package="R0805" value="10k" x="4.5" y="-2.25" smashed="yes" rot="R270">
+<attribute name="VALUE" x="2.214" y="-1.488" size="1.27" layer="27" rot="R270"/>
+<attribute name="NAME" x="5.516" y="-0.488" size="1.27" layer="25" rot="R270"/>
+</element>
+<element name="R13" library="Lab5" package="R0805" value="10k" x="2" y="-2.25" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-0.286" y="-1.488" size="1.27" layer="27" rot="R270"/>
+<attribute name="NAME" x="-1.734" y="1.262" size="1.27" layer="25" rot="R270"/>
+</element>
 </elements>
 <signals>
 <signal name="N$2">
@@ -985,11 +1132,11 @@ design rules under a new name.</description>
 <wire x1="-2" y1="10.65" x2="-1" y2="10.65" width="0.28" layer="1"/>
 <wire x1="-1" y1="10.65" x2="-0.75" y2="10.9" width="0.28" layer="1"/>
 <wire x1="-0.75" y1="10.9" x2="-0.75" y2="11.881" width="0.28" layer="1"/>
-<via x="-7.75" y="17.5" extent="1-16" drill="0.7"/>
+<via x="-8" y="16.5" extent="1-16" drill="0.7"/>
 <via x="6.25" y="17.75" extent="1-16" drill="0.7"/>
 <via x="-13.25" y="-11" extent="1-16" drill="0.7"/>
 <polygon width="0.3" layer="1" rank="2">
-<vertex x="-14.75" y="19.75"/>
+<vertex x="-14.5" y="19.75"/>
 <vertex x="15.25" y="19.75"/>
 <vertex x="15.25" y="13.75"/>
 <vertex x="19.25" y="13.75"/>
@@ -1231,8 +1378,8 @@ design rules under a new name.</description>
 <wire x1="0.3" y1="-0.3" x2="0.3" y2="-0.35" width="0.28" layer="16"/>
 <wire x1="0.3" y1="-0.35" x2="-4.55" y2="-5.2" width="0.28" layer="16"/>
 <via x="-4.55" y="-5.2" extent="1-16" drill="0.7"/>
-<wire x1="-4.55" y1="-5.2" x2="-16.33" y2="-5.25" width="0.28" layer="1"/>
-<wire x1="-16.33" y1="-5.25" x2="-19" y2="-7.92" width="0.28" layer="1"/>
+<wire x1="-4.55" y1="-5.2" x2="-16.3" y2="-5.2" width="0.28" layer="1"/>
+<wire x1="-16.3" y1="-5.2" x2="-19" y2="-7.92" width="0.28" layer="1"/>
 </signal>
 <signal name="TX1">
 <contactref element="U1" pad="28"/>
@@ -1278,8 +1425,8 @@ design rules under a new name.</description>
 <contactref element="U1" pad="49"/>
 <contactref element="R7" pad="1"/>
 <contactref element="Q3" pad="P$1"/>
-<wire x1="12.45" y1="-16.625" x2="12.45" y2="-14.6" width="0.28" layer="1"/>
-<wire x1="12.45" y1="-14.6" x2="12.35" y2="-14.5" width="0.28" layer="1"/>
+<wire x1="12.45" y1="-16.125" x2="12.45" y2="-14.6" width="0.28" layer="1"/>
+<wire x1="12.45" y1="-14.6" x2="12.35" y2="-14" width="0.28" layer="1"/>
 <via x="4.75" y="12" extent="1-16" drill="0.7"/>
 <wire x1="4.75" y1="12" x2="6.5" y2="10.25" width="0.28" layer="16"/>
 <wire x1="6.5" y1="10.25" x2="6.5" y2="3.25" width="0.28" layer="16"/>
@@ -1287,10 +1434,10 @@ design rules under a new name.</description>
 <wire x1="6.5" y1="3.25" x2="6.5" y2="1" width="0.28" layer="1"/>
 <wire x1="6.5" y1="1" x2="12.25" y2="-4.75" width="0.28" layer="1"/>
 <via x="12.25" y="-4.75" extent="1-16" drill="0.7"/>
-<wire x1="12.25" y1="-4.75" x2="12.25" y2="-12.25" width="0.28" layer="16"/>
-<via x="12.25" y="-12.25" extent="1-16" drill="0.7"/>
-<wire x1="12.25" y1="-12.25" x2="12.25" y2="-14.4" width="0.28" layer="1"/>
-<wire x1="12.25" y1="-14.4" x2="12.35" y2="-14.5" width="0.28" layer="1"/>
+<wire x1="12.25" y1="-4.75" x2="12.25" y2="-12" width="0.28" layer="16"/>
+<via x="12.25" y="-12" extent="1-16" drill="0.7"/>
+<wire x1="12.25" y1="-12" x2="12.25" y2="-14.4" width="0.28" layer="1"/>
+<wire x1="12.25" y1="-14.4" x2="12.35" y2="-14" width="0.28" layer="1"/>
 <wire x1="4.75" y1="12" x2="2.369" y2="12" width="0.28" layer="1"/>
 <wire x1="2.369" y1="12" x2="2.25" y2="11.881" width="0.28" layer="1"/>
 </signal>
@@ -1339,7 +1486,7 @@ design rules under a new name.</description>
 <wire x1="-6.75" y1="12.25" x2="-10.9" y2="12.25" width="0.28" layer="1"/>
 <wire x1="-10.9" y1="12.25" x2="-12.35" y2="13.7" width="0.28" layer="1"/>
 <wire x1="-12.35" y1="15" x2="-12.35" y2="13.7" width="0.28" layer="1"/>
-<wire x1="-12.45" y1="15.1" x2="-12.45" y2="17.125" width="0" layer="19" extent="1-1"/>
+<wire x1="-12.45" y1="15.1" x2="-12.45" y2="17.125" width="0.5" layer="1"/>
 </signal>
 <signal name="PE6">
 <contactref element="U1" pad="52"/>
@@ -1364,7 +1511,7 @@ design rules under a new name.</description>
 <contactref element="LED2" pad="A"/>
 <wire x1="11.85" y1="8" x2="13.95" y2="8" width="0.28" layer="1"/>
 </signal>
-<signal name="VBAT">
+<signal name="VBAT" class="1">
 <contactref element="U$2" pad="1"/>
 <contactref element="U$2" pad="3"/>
 <contactref element="S1" pad="1"/>
@@ -1381,38 +1528,38 @@ design rules under a new name.</description>
 <contactref element="R10" pad="2"/>
 <contactref element="R9" pad="2"/>
 <contactref element="R11" pad="2"/>
-<wire x1="19.04605" y1="-17.203946875" x2="19.04605" y2="-19.04605" width="0.4064" layer="1"/>
-<wire x1="19.04605" y1="-19.04605" x2="25.89895625" y2="-25.89895625" width="0.28" layer="1"/>
-<wire x1="19.04605" y1="17.203946875" x2="19.04605" y2="19.04605" width="0.4064" layer="1"/>
-<wire x1="19.04605" y1="19.04605" x2="25.89895625" y2="25.89895625" width="0.28" layer="1"/>
-<wire x1="-19.04605" y1="17.203946875" x2="-19.04605" y2="19.04605" width="0.4064" layer="1"/>
-<wire x1="-19.04605" y1="19.04605" x2="-25.89895625" y2="25.89895625" width="0.28" layer="1"/>
-<polygon width="0.3" layer="1">
+<wire x1="19.04605" y1="-16.953946875" x2="19.04605" y2="-19.04605" width="0.4572" layer="1"/>
+<wire x1="19.04605" y1="-19.04605" x2="25.89895625" y2="-25.89895625" width="0.4572" layer="1"/>
+<wire x1="19.04605" y1="17.203946875" x2="19.04605" y2="19.04605" width="0.4572" layer="1"/>
+<wire x1="19.04605" y1="19.04605" x2="25.89895625" y2="25.89895625" width="0.4572" layer="1"/>
+<wire x1="-19.04605" y1="17.203946875" x2="-19.04605" y2="19.04605" width="0.4572" layer="1"/>
+<wire x1="-19.04605" y1="19.04605" x2="-25.89895625" y2="25.89895625" width="0.4572" layer="1"/>
+<polygon width="0.4572" layer="1">
 <vertex x="-22.5" y="-14.75"/>
 <vertex x="-22.5" y="-22.5"/>
 <vertex x="22.5" y="-22.5"/>
 <vertex x="22.5" y="22.5"/>
 <vertex x="-22.5" y="22.5"/>
 <vertex x="-22.5" y="14.5"/>
-<vertex x="-15.5" y="14.5"/>
-<vertex x="-15.5" y="20.5"/>
+<vertex x="-15.25" y="14.5"/>
+<vertex x="-15.25" y="20.5"/>
 <vertex x="16" y="20.5"/>
 <vertex x="16" y="14.5"/>
 <vertex x="20" y="14.5"/>
 <vertex x="20" y="-14.5"/>
 <vertex x="16.5" y="-14.5"/>
-<vertex x="16.5" y="-20"/>
-<vertex x="-14.5" y="-20"/>
+<vertex x="16.5" y="-19.75"/>
+<vertex x="-14.5" y="-19.75"/>
 <vertex x="-14.5" y="-14.75"/>
 </polygon>
 <wire x1="2.54" y1="-19" x2="2.54" y2="-19.96" width="2" layer="1"/>
 <wire x1="2.54" y1="-19.96" x2="2.5" y2="-20" width="2" layer="1"/>
-<wire x1="-25.89895625" y1="-25.89895625" x2="-18.99605" y2="-18.99605" width="0.28" layer="1"/>
-<wire x1="-18.99605" y1="-18.99605" x2="-18.99605" y2="-17.253946875" width="0.28" layer="1"/>
+<wire x1="-25.89895625" y1="-25.89895625" x2="-18.99605" y2="-18.99605" width="0.4572" layer="1"/>
+<wire x1="-18.99605" y1="-18.99605" x2="-18.99605" y2="-17.253946875" width="0.4572" layer="1"/>
 <wire x1="19.3" y1="-8.05" x2="20.3" y2="-8.05" width="0.5" layer="1"/>
-<wire x1="20.3" y1="-8.05" x2="20.5" y2="-8.25" width="0.3" layer="1"/>
+<wire x1="20.3" y1="-8.05" x2="20.5" y2="-8.25" width="0.4572" layer="1"/>
 <wire x1="19.3" y1="-9.95" x2="20.3" y2="-9.95" width="0.5" layer="1"/>
-<wire x1="20.3" y1="-9.95" x2="20.5" y2="-9.75" width="0.3" layer="1"/>
+<wire x1="20.3" y1="-9.95" x2="20.5" y2="-9.75" width="0.4572" layer="1"/>
 <wire x1="19.45" y1="-12" x2="20.5" y2="-12" width="0.5" layer="1"/>
 </signal>
 <signal name="N$16">
@@ -1425,9 +1572,8 @@ design rules under a new name.</description>
 <contactref element="JP1" pad="2"/>
 <contactref element="S1" pad="2"/>
 <wire x1="0" y1="-19" x2="0" y2="-18" width="2" layer="1"/>
-<wire x1="0" y1="-18" x2="3.5" y2="-14.5" width="2" layer="1"/>
-<wire x1="3.5" y1="-14.5" x2="4.96" y2="-14.5" width="2" layer="1"/>
-<wire x1="4.96" y1="-14.5" x2="5" y2="-14.54" width="2" layer="1"/>
+<wire x1="0" y1="-18" x2="3.46" y2="-14.54" width="2" layer="1"/>
+<wire x1="3.46" y1="-14.54" x2="5" y2="-14.54" width="2" layer="1"/>
 </signal>
 <signal name="N$15">
 <contactref element="C11" pad="1"/>
@@ -1478,10 +1624,10 @@ design rules under a new name.</description>
 <contactref element="JP6" pad="1"/>
 <contactref element="Q3" pad="P$3"/>
 <contactref element="D3" pad="P$1"/>
-<wire x1="15.045403125" y1="-16.95459375" x2="15.20459375" y2="-16.95459375" width="0.5" layer="1"/>
-<wire x1="15.20459375" y1="-16.95459375" x2="17.25" y2="-19" width="0.5" layer="1"/>
-<wire x1="11.5" y1="-18.65" x2="11.85" y2="-19" width="0.5" layer="1"/>
-<wire x1="11.85" y1="-19" x2="17.25" y2="-19" width="0.5" layer="1"/>
+<wire x1="15.045403125" y1="-16.70459375" x2="15.20459375" y2="-16.95459375" width="0.5" layer="1"/>
+<wire x1="15.20459375" y1="-16.95459375" x2="17.25" y2="-18.75" width="0.5" layer="1"/>
+<wire x1="11.5" y1="-18.15" x2="11.85" y2="-18.75" width="0.5" layer="1"/>
+<wire x1="11.85" y1="-18.75" x2="17.25" y2="-18.75" width="0.5" layer="1"/>
 </signal>
 <signal name="N$20">
 <contactref element="JP7" pad="1"/>
